@@ -1,4 +1,4 @@
-module ev-fiber
+module fiber-boilerplate
 
 go 1.13
 

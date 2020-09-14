@@ -1,7 +1,7 @@
 package main
 
 import (
-	"ev-fiber/router"
+	"fiber-boilerplate/router"
 
 	"github.com/gofiber/fiber"
 )

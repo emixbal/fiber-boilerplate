@@ -1,7 +1,7 @@
 package router
 
 import (
-	"ev-fiber/handler"
+	"fiber-boilerplate/handler"
 
 	"github.com/gofiber/fiber"
 	"github.com/gofiber/logger"

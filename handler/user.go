@@ -1,10 +1,16 @@
 package handler
 
 import (
+	"fiber-boilerplate/database"
+	"fiber-boilerplate/model"
+
 	"github.com/gofiber/fiber"
 )
 
-// ListUser hanlde api status
+// ListUser query all users
 func ListUser(c *fiber.Ctx) {
-	c.JSON(fiber.Map{"status": "success", "message": "Im user handler", "data": nil})
+	db := database.DB
+	var users []model.User
+	db.Find(&users)
+	c.JSON(fiber.Map{"status": "success", "message": "All products", "data": users})
 }
